@@ -1,4 +1,13 @@
 {
+    "Selvi CORS": {
+      "prefix": "sfcors",
+      "body": [
+        "header(\"Access-Control-Allow-Origin: *\");",
+        "header(\"Access-Control-Allow-Headers: Content-Type, Authorization, authorization\");",
+        "header(\"Access-Control-Allow-Methods: OPTIONS, GET, POST, PATCH, DELETE\");"
+      ],
+      "description": "Selvi CORS"
+    },
     "Selvi Controller": {
         "prefix": "sfcontroller",
         "body": [
