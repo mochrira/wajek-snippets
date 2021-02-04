@@ -43,7 +43,7 @@
           "    });",
           "  }",
           "",
-          "  async update(id${1:class}, data) {",
+          "  async update(id${1:class}, data = {}) {",
           "    return await this.httpService.patch(this.apiURL + '${2:uri}/' + id${1:class}, data, {",
           "      headers: new HttpHeaders({",
           "        \"Authorization\": await this.auth.idToken.toPromise()",
