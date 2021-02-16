@@ -23,7 +23,7 @@
         "prefix": "dartservice",
         "body": [
           "import 'package:firebase_auth/firebase_auth.dart';",
-          "import 'package:../models/${2:alias}.dart';",
+          "import '../models/${2:alias}.dart';",
           "import 'package:wui/wui.dart';",
           "",
           "class ${1:servicename}Result {",
