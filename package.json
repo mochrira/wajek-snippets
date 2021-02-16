@@ -30,6 +30,10 @@
             {
                 "language": "typescript",
                 "path": "./snippets/typescript.code-snippets"
+            },
+            {
+                "language": "dart",
+                "path": "./snippets/dart.code-snippets"
             }
         ]
     }
