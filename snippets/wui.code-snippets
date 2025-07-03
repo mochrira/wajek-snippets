@@ -1,7 +1,8 @@
 {
   "Wui Page": {
-    "prefix": "",
+    "prefix": "wuipage",
     "body": [
+      "<ng-template #pageTpl>",
       "<wui-page>",
       "    <wui-app-bar>",
       "        <div class=\"wui-app-bar-leading\">",
@@ -18,12 +19,13 @@
       "            <div class=\"mb-5 align-items-center font-28 font-weight-500\">My Page</div>",
       "        </div>",
       "    </div>",
-      "</wui-page>"
+      "</wui-page>",
+      "</ng-template>",
     ],
     "description": "Wui Page"
   },
   "Wui App": {
-    "prefix": "",
+    "prefix": "wuiapp",
     "body": [
       "<wui-app>",
       "  <wui-drawer>",
@@ -91,6 +93,7 @@
   "Wui Modal": {
     "prefix": "wuimodal",
     "body": [
+      "<ng-template #dialogTpl>",
       "<div class=\"wui-modal-inner\">",
       "  <div class=\"wui-modal-header\">",
       "    <div class=\"d-flex justify-content-between align-items-center\">",
@@ -111,7 +114,8 @@
       "      <button class=\"wui-button wui-button-primary\" type=\"submit\">Simpan</button>",
       "    </div>",
       "  </div>",
-      "</div>"
+      "</div>",
+      "</ng-template>"
     ],
     "description": "WUI Modal layout basic (tanpa tag <wui-modal>)"
   },
