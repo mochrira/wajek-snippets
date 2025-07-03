@@ -1,163 +1,194 @@
 {
-    "Wui Page": {
-      "prefix": "",
-      "body": [
-        "<wui-page>",
-        "    <wui-app-bar>",
-        "        <div class=\"wui-app-bar-leading\">",
-        "            <button class=\"wui-button wui-button-large wui-button-icon wui-button-smooth\" wuiToggleDrawer>",
-        "                <wui-icon icon=\"menu\"></wui-icon>",
-        "            </button>",
-        "        </div>",
-        "        <div class=\"wui-app-bar-title\"></div>",
-        "        <div class=\"wui-app-bar-trailing\"></div>",
-        "    </wui-app-bar>",
-        "    ",
-        "    <div class=\"wui-page-inner\">",
-        "        <div class=\"wui-page-container\">",
-        "            <div class=\"mb-5 align-items-center font-28 font-weight-500\">My Page</div>",
-        "        </div>",
-        "    </div>",
-        "</wui-page>"
-      ],
-      "description": "Wui Page"
-    },
-    "Wui App": {
-      "prefix": "",
-      "body": [
-        "<wui-app>",
-        "  <wui-drawer>",
-        "    <div class=\"wui-drawer-inner\">",
-        "      <div class=\"wui-drawer-header\">",
-        "        <div class=\"brand px-4 d-flex align-items-center mb-4\">",
-        "          <div class=\"brand-title\">MY APP</div>",
-        "        </div>",
-        "        ",
-        "        <div class=\"wui-drawer-header-title font-16 font-weight-500\">John Doe</div>",
-        "        <div class=\"wui-drawer-header-subtitle\">johndoe@gmail.com</div>",
-        "      </div>",
-        "      ",
-        "      <wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>",
-        "  </wui-drawer>",
-        "</wui-app>"
-      ],
-      "description": "Wui App"
-    },
-    "Wui List": {
-        "prefix": "wuilist",
-        "body": [
-          "<wui-list class=\"wui-list-bordered wui-list-hovered\">",
-          "    <wui-list-tile class=\"wui-list-tile-56\">",
-          "        <div class=\"wui-list-tile-leading\">",
-          "            <wui-icon icon=\"tag\"></wui-icon>",
-          "        </div>",
-          "        <div class=\"wui-list-tile-content\"></div>",
-          "        <div class=\"wui-list-tile-trailing\"></div>",
-          "    </wui-list-tile>",
-          "</wui-list>"
-        ],
-        "description": "Wui List"
-    },
-    "Wui Menu": {
-        "prefix": "wuimenu",
-        "body": [
-          "<wui-menu class=\"compact\">",
-          "    <wui-menu-item icon=\"lead-pencil\">Menu Item</wui-menu-item>",
-          "</wui-menu>"
-        ],
-        "description": "Wui Menu"
-    },
-    "Wui Menu Item": {
-        "prefix": "wuimenuitem",
-        "body": [
-          "<wui-menu-item icon=\"lead-pencil\">Menu Item</wui-menu-item>"
-        ],
-        "description": "Wui Menu Item"
-    },
-    "Wui Modal": {
-        "prefix": "wuimodal",
-        "body": [
-          "<wui-modal #modal>",
-          "    <div class=\"wui-modal-header\">",
-          "        <div class=\"d-flex justify-content-between align-items-center\">",
-          "            <div>${1:modaltitle}</div>",
-          "            <button class=\"wui-button wui-button-smooth wui-button-icon\" (click)=\"modal.close()\">",
-          "                <wui-icon icon=\"close\"></wui-icon>",
-          "            </button>",
-          "        </div>",
-          "    </div>",
-          "",
-          "    <div class=\"wui-modal-footer\">",
-          "        <div class=\"d-flex justify-content-between align-items-center\">",
-          "            <button class=\"wui-button wui-button-smooth\">BATAL</button>",
-          "            <button class=\"wui-button wui-button-smooth\">SIMPAN</button>",
-          "        </div>",
-          "    </div>",
-          "</wui-modal>"
-        ],
-        "description": "Wui Modal"
-    },
-    "Wui Drawer": {
-        "prefix": "wuidrawer",
-        "body": [
-          "<wui-drawer>",
-          "    <wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>",
-          "</wui-drawer>"
-        ],
-        "description": "Wui Drawer"
-    },
-    "Wui Drawer Item": {
-        "prefix": "wuidraweritem",
-        "body": [
-          "<wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>"
-        ],
-        "description": "Wui Drawer Item"
-    },
-    "Wui Drawer Divider Label": {
-        "prefix": "wuidrawerdividerlabel",
-        "body": [
-          "<div class=\"wui-drawer-divider no-border\">",
-          "    <div class=\"wui-drawer-divider-label\">${1:label}</div>",
-          "</div>"
-        ],
-        "description": "Wui Drawer Divider Label"
-    },
-    "Wui Drawer Divider": {
-        "prefix": "wuidrawerdivider",
-        "body": [
-          "<div class=\"wui-drawer-divider\"></div>"
-        ],
-        "description": "Wui Drawer Divider"
-    },
-    "Wui Drawer Header": {
-        "prefix": "wuidrawerheader",
-        "body": [
-          "<wui-drawer-header title=\"${1:title}\" subTitle=\"${2:subTitle}\"></wui-drawer-header>"
-        ],
-        "description": "Wui Drawer Header"
-    },
-    "Wui Toggle": {
-        "prefix": "wuitoggle",
-        "body": [
-          "<div class=\"wui-toggle\">",
-          "    <input type=\"checkbox\" id=\"${1:name}\">",
-          "    <div class=\"wui-toggle-mark\"></div>",
-          "    <label for=\"${1:name}\" class=\"wui-toggle-label\">${2:label}</label>",
-          "</div>"
-        ],
-        "description": "Wui Toggle"
-    },
-    "Wui Form Field": {
-        "prefix": "wuiformfield",
-        "body": [
-          "<wui-form-field [boxed]=\"true\">",
-          "    <div class=\"wui-form-field-suffix\">",
-          "        <wui-icon icon=\"pencil\"></wui-icon>",
-          "    </div>",
-          "    <label for=\"${1:id}\">${2:label}</label>",
-          "    <input id=\"${1:id}\" type=\"text\" wuiInput>",
-          "</wui-form-field>"
-        ],
-        "description": "Wui Form Field"
-    }
+  "Wui Page": {
+    "prefix": "",
+    "body": [
+      "<wui-page>",
+      "    <wui-app-bar>",
+      "        <div class=\"wui-app-bar-leading\">",
+      "            <button class=\"wui-button wui-button-large wui-button-icon wui-button-smooth\" wuiToggleDrawer>",
+      "                <wui-icon icon=\"menu\"></wui-icon>",
+      "            </button>",
+      "        </div>",
+      "        <div class=\"wui-app-bar-title\"></div>",
+      "        <div class=\"wui-app-bar-trailing\"></div>",
+      "    </wui-app-bar>",
+      "    ",
+      "    <div class=\"wui-page-inner\">",
+      "        <div class=\"wui-page-container\">",
+      "            <div class=\"mb-5 align-items-center font-28 font-weight-500\">My Page</div>",
+      "        </div>",
+      "    </div>",
+      "</wui-page>"
+    ],
+    "description": "Wui Page"
+  },
+  "Wui App": {
+    "prefix": "",
+    "body": [
+      "<wui-app>",
+      "  <wui-drawer>",
+      "    <div class=\"wui-drawer-inner\">",
+      "      <div class=\"wui-drawer-header\">",
+      "        <div class=\"brand px-4 d-flex align-items-center mb-4\">",
+      "          <div class=\"brand-title\">MY APP</div>",
+      "        </div>",
+      "        ",
+      "        <div class=\"wui-drawer-header-title font-16 font-weight-500\">John Doe</div>",
+      "        <div class=\"wui-drawer-header-subtitle\">johndoe@gmail.com</div>",
+      "      </div>",
+      "      ",
+      "      <wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>",
+      "  </wui-drawer>",
+      "</wui-app>"
+    ],
+    "description": "Wui App"
+  },
+  "Wui Table": {
+    "prefix": "wuitable",
+    "body": [
+      "<div class=\"wui-table-responsive wui-edge-fix\">",
+      "  <table class=\"wui-table wui-table-hover\">",
+      "    <thead>",
+      "      <tr>",
+      "        <th class=\"align-middle\">${1:Kolom 1}</th>",
+      "        <th class=\"align-middle\">${2:Kolom 2}</th>",
+      "        <th class=\"align-middle\">${3:Kolom 3}</th>",
+      "        <th></th>",
+      "      </tr>",
+      "    </thead>",
+      "    <tbody>",
+      "    </tbody>",
+      "  </table>",
+      "</div>",
+    ],
+    "description": "Template tabel WUI untuk Angular dengan placeholder variabel"
+  },
+  "Wui Menu": {
+    "prefix": "wuimenu",
+    "body": [
+      "<ng-template #${1:rowMenu}>",
+      "  <div class=\"wui-menu wui-menu-compact\" wuiContextMenu>",
+      "    <button class=\"wui-menu-item\" wuiContextMenuItem>",
+      "      <wui-icon icon=\"${2:pencil}\" class=\"me-3\"></wui-icon>${3:Edit}",
+      "    </button>",
+      "    <button class=\"wui-menu-item\" wuiContextMenuItem>",
+      "      <wui-icon icon=\"${4:delete}\" class=\"me-3\"></wui-icon>${5:Hapus}",
+      "    </button>",
+      "  </div>",
+      "</ng-template>"
+    ],
+    "description": "Wui Context Menu dalam ng-template"
+  },
+  "Wui Menu Item": {
+    "prefix": "wuimenuitem",
+    "body": [
+      "<button class=\"wui-menu-item\" wuiContextMenuItem>",
+      "  <wui-icon icon=\"${1:pencil}\" class=\"me-3\"></wui-icon>${2:Edit}",
+      "</button>"
+    ],
+    "description": "Item dalam Wui Context Menu"
+  },
+  "Wui Modal": {
+    "prefix": "wuimodal",
+    "body": [
+      "<div class=\"wui-modal-inner\">",
+      "  <div class=\"wui-modal-header\">",
+      "    <div class=\"d-flex justify-content-between align-items-center\">",
+      "      <div>${1:modaltitle}</div>",
+      "      <button class=\"wui-button wui-button-smooth wui-button-icon\" tabindex=\"-1\" type=\"button\" (click)=\"close()\">",
+      "        <wui-icon icon=\"close\"></wui-icon>",
+      "      </button>",
+      "    </div>",
+      "  </div>",
+      "",
+      "  <div class=\"wui-modal-content pt-2\">",
+      "    ${2}",
+      "  </div>",
+      "",
+      "  <div class=\"wui-modal-footer\">",
+      "    <div class=\"d-flex justify-content-between align-items-center\">",
+      "      <button class=\"wui-button\" type=\"button\" (click)=\"close()\">Batal</button>",
+      "      <button class=\"wui-button wui-button-primary\" type=\"submit\">Simpan</button>",
+      "    </div>",
+      "  </div>",
+      "</div>"
+    ],
+    "description": "WUI Modal layout basic (tanpa tag <wui-modal>)"
+  },
+  "Wui Drawer": {
+    "prefix": "wuidrawer",
+    "body": [
+      "  <wui-drawer>",
+      "    <div class=\"wui-drawer-inner\">",
+      "      <div class=\"wui-drawer-header\">",
+      "        <div class=\"brand px-4 d-flex align-items-center mb-4\">",
+      "          <div class=\"brand-title\">MY APP</div>",
+      "        </div>",
+      "        ",
+      "        <div class=\"wui-drawer-header-title font-16 font-weight-500\">John Doe</div>",
+      "        <div class=\"wui-drawer-header-subtitle\">johndoe@gmail.com</div>",
+      "      </div>",
+      "      ",
+      "      <wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>",
+      "  </wui-drawer>",
+    ],
+    "description": "Wui Drawer"
+  },
+  "Wui Drawer Item": {
+    "prefix": "wuidraweritem",
+    "body": [
+      "<wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>"
+    ],
+    "description": "Wui Drawer Item"
+  },
+  "Wui Drawer Divider Label": {
+    "prefix": "wuidrawerdividerlabel",
+    "body": [
+      "<div class=\"wui-drawer-divider no-border\">",
+      "    <div class=\"wui-drawer-divider-label\">${1:label}</div>",
+      "</div>"
+    ],
+    "description": "Wui Drawer Divider Label"
+  },
+  "Wui Drawer Divider": {
+    "prefix": "wuidrawerdivider",
+    "body": [
+      "<div class=\"wui-drawer-divider\"></div>"
+    ],
+    "description": "Wui Drawer Divider"
+  },
+  "Wui Drawer Header": {
+    "prefix": "wuidrawerheader",
+    "body": [
+      "<div class=\"wui-drawer-header\">",
+      "  <div class=\"wui-drawer-header-avatar mx-4 mb-3\"></div>",
+      "",
+      "  <div class=\"wui-drawer-header-title font-weight-500 px-4\">${1:John Doe}</div>",
+      "  <div class=\"wui-drawer-header-subtitle mb-4\">${2:johndoe@gmail.com}</div>",
+      "</div>"
+    ],
+    "description": "Wui Drawer Header"
+  },
+  "Wui Toggle": {
+    "prefix": "wuitoggle",
+    "body": [
+      "<wui-toggle>",
+      "  <label class=\"wui-toggle-label\">${1:Mode}</label>",
+      "</wui-toggle>"
+    ],
+    "description": "Wui Toggle"
+  },
+  "Wui Form Field": {
+    "prefix": "wuiformfield",
+    "body": [
+      "<wui-form-field [boxed]=\"true\">",
+      "    <div class=\"wui-form-field-suffix\">",
+      "        <wui-icon icon=\"pencil\"></wui-icon>",
+      "    </div>",
+      "    <label for=\"${1:id}\">${2:label}</label>",
+      "    <input id=\"${1:id}\" type=\"text\" wuiInput>",
+      "</wui-form-field>"
+    ],
+    "description": "Wui Form Field"
+  }
 }
