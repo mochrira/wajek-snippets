@@ -1,42 +1,47 @@
 {
     "Wui Page": {
-        "prefix": "wuipage",
-        "body": [
-          "<wui-page></wui-page>"
-        ],
-        "description": "Wui Page"
-    },
-    "Wui App Bar": {
-        "prefix": "wuiappbar",
-        "body": [
-          "<wui-app-bar>",
-          "",
-          "    <div class=\"wui-app-bar-leading\">",
-          "        <button class=\"wui-button wui-button-large wui-button-icon wui-button-smooth\">",
-          "            <wui-icon icon=\"menu\"></wui-icon>",
-          "        </button>",
-          "    </div>",
-          "",
-          "    <div class=\"wui-app-bar-title\">${1:title}</div>",
-          "    ",
-          "    <div class=\"wui-app-bar-trailing\">",
-          "        <button class=\"wui-button wui-button-large wui-button-icon wui-button-smooth\">",
-          "            <wui-icon icon=\"refresh\"></wui-icon>",
-          "        </button>",
-          "    </div>",
-          "",
-          "</wui-app-bar>"
-        ],
-        "description": "Wui App Bar"
+      "prefix": "",
+      "body": [
+        "<wui-page>",
+        "    <wui-app-bar>",
+        "        <div class=\"wui-app-bar-leading\">",
+        "            <button class=\"wui-button wui-button-large wui-button-icon wui-button-smooth\" wuiToggleDrawer>",
+        "                <wui-icon icon=\"menu\"></wui-icon>",
+        "            </button>",
+        "        </div>",
+        "        <div class=\"wui-app-bar-title\"></div>",
+        "        <div class=\"wui-app-bar-trailing\"></div>",
+        "    </wui-app-bar>",
+        "    ",
+        "    <div class=\"wui-page-inner\">",
+        "        <div class=\"wui-page-container\">",
+        "            <div class=\"mb-5 align-items-center font-28 font-weight-500\">My Page</div>",
+        "        </div>",
+        "    </div>",
+        "</wui-page>"
+      ],
+      "description": "Wui Page"
     },
     "Wui App": {
-        "prefix": "wuiapp",
-        "body": [
-          "<wui-app>",
-          "",
-          "</wui-app>"
-        ],
-        "description": "Wui App"
+      "prefix": "",
+      "body": [
+        "<wui-app>",
+        "  <wui-drawer>",
+        "    <div class=\"wui-drawer-inner\">",
+        "      <div class=\"wui-drawer-header\">",
+        "        <div class=\"brand px-4 d-flex align-items-center mb-4\">",
+        "          <div class=\"brand-title\">MY APP</div>",
+        "        </div>",
+        "        ",
+        "        <div class=\"wui-drawer-header-title font-16 font-weight-500\">John Doe</div>",
+        "        <div class=\"wui-drawer-header-subtitle\">johndoe@gmail.com</div>",
+        "      </div>",
+        "      ",
+        "      <wui-drawer-item icon=\"home\" routerLink=\"/home\" routerLinkActive=\"active\">Dashboard</wui-drawer-item>",
+        "  </wui-drawer>",
+        "</wui-app>"
+      ],
+      "description": "Wui App"
     },
     "Wui List": {
         "prefix": "wuilist",
