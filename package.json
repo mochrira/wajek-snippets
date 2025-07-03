@@ -2,7 +2,7 @@
     "name": "wajek-snippets",
     "displayName": "Wajek Snippets",
     "description": "Wajek Code Snippets Collection for faster coding experience using Wajek Framework System",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "publisher": "wajek-studio",
     "engines": {
         "vscode": "^1.52.0"
